@@ -10,10 +10,10 @@ Original file is located at
 import pandas as pd
 import numpy as np
 
-HR_need = pd.read_csv('/content/drive/MyDrive/HR data.csv')
+HR_need = pd.read_csv('HR data.csv')
 HR_need
 
-cand = pd.read_csv('/content/drive/MyDrive/candidate.csv')
+cand = pd.read_csv('candidate.csv')
 cand
 
 #Convert level to number
