@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Fill Your Data
+            </h1>
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="Full Name") }}
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="Email Address") }}
+
+            {{ form.Education.label() }}
+            {{ form.Education(class="form-control", placeholder="Education Background") }}
+
+            {{ form.Skill.label() }}
+            {{ form.Skill(class="form-control", placeholder="Skill") }}
+
+            {{ form.Work_Experience.label() }}
+            {{ form.Work_Experience(class="form-control", placeholder="Work Experience") }}
+
+            {{ form.Domicile.label() }}
+            {{ form.Domicile(class="form-control", placeholder="Domicile/City/Town") }}
+
+            {{ form.Positon.label() }}
+            {{ form.Positon(class="form-control", placeholder="Positon that you want to looking for") }}
+            
+            {{ form.Link_to_resume.label() }}
+            {{ form.Link_to_resume(class="form-control", placeholder="Link to resume") }}
+            
+            {{ form.Link_to_repository.label() }}
+            {{ form.Link_to_repository(class="form-control", placeholder="Link to repository") }}
+
+            <br>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        </form>
+    </div>
+</body>
+{% endblock %}
